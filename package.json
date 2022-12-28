@@ -16,7 +16,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
     "gatsby": "^5.3.3",
+    "prettier": "^2.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
