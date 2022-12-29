@@ -4,8 +4,12 @@ import { graphql } from 'gatsby';
 import { useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import { Button, Container, styled } from '@mui/material';
+import { Link } from 'gatsby';
+import { TopArea, BtnArea, StyledLink } from './styles';
 
 const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
+  const menu: string[] = ['introduction', 'notice', 'paper', 'person', 'activity'];
+  // get Logo Usign graphql
   const data = useStaticQuery(graphql`
     query {
       desktopImage: file(relativePath: { eq: "apple_logo.png" }) {
@@ -20,30 +24,26 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
       <TopArea className="Layout">
-        <Img className="logo" fluid={[data.desktopImage.childImageSharp.fluid]} />
+        <Link to="/">
+          <Img
+            style={{ maxWidth: '100vw', marginLeft: 0 }}
+            className="logo"
+            fluid={[data.desktopImage.childImageSharp.fluid]}
+          />
+        </Link>
         <BtnArea className="btns">
-          <Button variant="text"> Introduction</Button>
-          <Button variant="text"> news</Button>
-          <Button variant="text"> paper</Button>
+          {menu.map((t) => (
+            <Button key={t} variant="text">
+              <StyledLink to={`/${t}`} activeStyle={{ fontSize: '20px', fontWeight: 700 }}>
+                {t}
+              </StyledLink>
+            </Button>
+          ))}
         </BtnArea>
       </TopArea>
-      {children}
+      <Container>{children}</Container>
     </>
   );
 };
 
 export default Layout;
-
-const TopArea = styled(Container)`
-  display: flex;
-  align-content: space-between;
-  align-items: flex-start;
-  padding: 30px 50px;
-  .logo {
-    min-height: 30px;
-    min-width: 30px;
-  }
-`;
-const BtnArea = styled('div')`
-  margin-left: auto;
-`;
