@@ -6,6 +6,8 @@ import Img from 'gatsby-image';
 import { Button, Container, styled } from '@mui/material';
 import { Link } from 'gatsby';
 import { TopArea, BtnArea, StyledLink } from './styles';
+import Footer from '@components/Footer';
+import 'src/css/global.css';
 
 const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
   const menu: string[] = ['introduction', 'notice', 'paper', 'person', 'activity'];
@@ -22,7 +24,7 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
     }
   `);
   return (
-    <>
+    <main style={{ position: 'relative', minHeight: '100vh' }}>
       <TopArea className="Layout">
         <Link to="/">
           <Img
@@ -41,8 +43,9 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
           ))}
         </BtnArea>
       </TopArea>
-      <Container>{children}</Container>
-    </>
+      <Container style={{ paddingBottom: '100px' }}>{children}</Container>
+      <Footer />
+    </main>
   );
 };
 
