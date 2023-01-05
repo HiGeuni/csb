@@ -6,15 +6,18 @@ const Footer = () => {
   return (
     <Box
       sx={{
+        display: 'flex',
         position: 'absolute',
+        alignItems: 'center',
+        justifyContent: 'center',
         bottom: '0',
         height: '100px',
         width: '100%',
-        bgcolor: 'lightgray',
-        marginBottom: 'auto',
+        borderTop: '1px solid',
+        maring: 'auto',
       }}
     >
-      This is Footer
+      How much is it?
     </Box>
   );
 };
