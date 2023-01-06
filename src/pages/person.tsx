@@ -5,7 +5,7 @@ import dummy from '../../dummy.json';
 
 const StyledDiv = styled('div')`
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin: 30px;
   flex-direction: row;
   flex-wrap: wrap;
