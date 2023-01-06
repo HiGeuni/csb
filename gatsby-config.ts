@@ -1,4 +1,9 @@
+import dotenv from 'dotenv';
 import type { GatsbyConfig } from 'gatsby';
+
+dotenv.config({
+  path: `.env.development`,
+});
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -19,6 +24,13 @@ const config: GatsbyConfig = {
       options: {
         name: 'images',
         path: `./src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
   ],

@@ -51,7 +51,7 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
         >
           {menu.map((t) => (
             <Button key={t} variant="text">
-              <StyledLink to={`/${t}`} activeStyle={{ fontSize: '20px', fontWeight: 700 }}>
+              <StyledLink to={`/${t}`} activeStyle={{ fontWeight: 700 }}>
                 {t}
               </StyledLink>
             </Button>
