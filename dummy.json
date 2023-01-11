@@ -1,0 +1,34 @@
+{
+  "Person": [
+    {
+      "id": 0,
+      "name": "A",
+      "major": "Computer Science and Engineering"
+    },
+    {
+      "id": 1,
+      "name": "B",
+      "major": "Ceramic"
+    },
+    {
+      "id": 2,
+      "name": "C",
+      "major": "Metal Art Design"
+    },
+    {
+      "id": 3,
+      "name": "D",
+      "major": "Visual Design"
+    },
+    {
+      "id": 4,
+      "name": "E",
+      "major": "Industrial Design"
+    },
+    {
+      "id": 5,
+      "name": "F",
+      "major": "Electric And Information EngineeringEngineering"
+    }
+  ]
+}
