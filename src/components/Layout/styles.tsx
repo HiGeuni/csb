@@ -20,11 +20,9 @@ export const StyledLink = styled(Link)`
   color: black;
   text-decoration: none;
   :hover {
-    font-size: 16px;
     font-weight: 700;
   }
   :active {
-    font-size: 16px;
     font-wieght: 700;
   }
 `;

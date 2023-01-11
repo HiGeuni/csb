@@ -14,11 +14,37 @@ const config: GatsbyConfig = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-tsconfig-paths',
+    'gatsby-image-background-slider',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
         path: `./src/images/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'backgrounds',
+        path: './src/images/bg/',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        ignore: [
+          '/node_modules/slick-carousel/slick/slick.css',
+          '/node_modules/slick-carousel/slick/slick-theme.css',
+        ],
+        whitelist: [
+          'slick-slider',
+          'slick-initialized',
+          'slick-list',
+          'slick-track',
+          'slick-slide',
+          'slick-active',
+          'slick-current',
+        ],
       },
     },
   ],
