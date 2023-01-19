@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcsb=self.webpackChunkcsb||[]).push([[691],{7200:function(t,s,l){l.r(s);var c=l(6089),e=l(1183),i=l(917);s.default=()=>(0,i.tZ)(e.Z,null,(0,i.tZ)(c.Z,null,(0,i.tZ)("img",{style:{display:"block",height:"auto",maxWidth:"100px"},src:"https://i0.wp.com/iammom.co.kr/wp-content/uploads/%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%9C%EC%A0%84.jpg?fit=1000%2C667&ssl=1"})),(0,i.tZ)("h1",null,"This is Index Page"))}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-67baa9ee310c5fa41760.js.map

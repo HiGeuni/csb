@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcsb=self.webpackChunkcsb||[]).push([[256],{4534:function(s,e,u){u.r(e);var l=u(1183),n=u(917);e.default=()=>(0,n.tZ)(l.Z,null,(0,n.tZ)("h1",null,"This is person Page"))}}]);
+//# sourceMappingURL=component---src-pages-person-tsx-ab735fef8e40ee57fb81.js.map
