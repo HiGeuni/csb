@@ -13,7 +13,7 @@ const config: GatsbyConfig = {
     resolve: 'gatsby-source-contentful',
     options: {
       "accessToken": "Tiq4ftC6CY3klyuNEkgBnimxM1_az71xjQ_eOE6NH_Y",
-      "spaceId": ""
+      "spaceId": "hmrvha9w89nn"
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-postcss", "gatsby-plugin-mdx", {
     resolve: 'gatsby-source-filesystem',
@@ -29,7 +29,9 @@ const config: GatsbyConfig = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  },
+    "gatsby-plugin-mantine",
+  ]
 };
 
 export default config;
