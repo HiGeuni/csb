@@ -1,13 +1,11 @@
 import React from 'react';
-
-import Layout from '../../components/layout';
+import Layout from '@src/components/layout';
+import Card from '@src/components/introduction/Card';
 
 const IntroductionMain = () => {
   return (
     <Layout>
-      <div className=''>Title</div>
-      <div>image</div>
-      <div>Description</div>
+      <Card />
     </Layout>
   );
 };

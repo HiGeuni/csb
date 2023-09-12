@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <>
-      <div className='navigation-wrapper'>
+      <div className='container mx-auto navigation-wrapper'>
         <div ref={sliderRef} className='keen-slider'>
           <div className='keen-slider__slide number-slide1'>1</div>
           <div className='keen-slider__slide number-slide2'>2</div>

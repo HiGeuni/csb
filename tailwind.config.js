@@ -17,6 +17,10 @@ module.exports = {
       gray: '#dee2e6'
     },
     extend: {
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+      },
       keyframes: {
         serviceAnimation: {
           '0%': {
@@ -34,19 +38,38 @@ module.exports = {
             bottom: '68px',
           },
         },
-        blackToGray : {
+        headerColorChange : {
           '0%': {
-            color: '#000000',
+            color: '#041444',
           },
           '100%': {
-            color: '#6b7280',
+            color: '#444c74',
           },
-        }
+        },
+        headerHeightChange: {
+          '0%': {
+            height: '0px',
+          },
+          '100%': {
+            height: '240px',
+          },
+        },
+        reverseHeaderHeightChange: {
+          '0%': {
+            height: '240px',
+          },
+          '100%': {
+            height: '0px',
+          },
+        },
       },
       animation: {
         'service-animation': 'serviceAnimation 1s ease-in-out',
         'shift-bottom': 'shiftBottom 0.3s ease-in-out forwards',
         'black-to-gray': 'blackToGray 0.3s ease-in-out forwards',
+        'header-animation': 'headerColorChange 0.3s ease-in-out forwards',
+        'header-height': 'headerHeightChange 0.15s ease-in-out forwards',
+        'reverse-header-height': 'reverseHeaderHeightChange 0.15s ease-in-out forwards',
       },
     },
   },

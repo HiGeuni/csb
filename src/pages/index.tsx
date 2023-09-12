@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <Layout>
       <ImageSlider />
-      <div className='w-full h-fit flex'>
-        <div className='w-1/2 h-fit bg-gray-500 m-4'>
+      <div className='container mx-auto p-1 w-full h-fit md:flex'>
+        <div className='w-full md:w-1/2 h-fit bg-gray-500 p-4'>
           <div className='text-lg font-bold p-2'>Notice</div>
           <hr />
           <div className='flex justify-between m-2 bg-amber-100'>
@@ -32,7 +32,7 @@ const Home = () => {
             <div>createdAt</div>
           </div>
         </div>
-        <div className='w-1/2 h-fit bg-gray-500 m-4'>
+        <div className='w-full md:w-1/2 h-fit p-4'>
           <div className='text-lg font-bold p-2'>Notice</div>
           <hr />
           <div className='flex justify-between m-2 bg-amber-100'>

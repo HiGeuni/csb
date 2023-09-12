@@ -31,6 +31,7 @@ const config: GatsbyConfig = {
     __key: "pages"
   },
     "gatsby-plugin-mantine",
+    "gatsby-plugin-tsconfig-paths"
   ]
 };
 
