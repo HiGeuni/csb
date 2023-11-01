@@ -3,7 +3,7 @@ import { NoticeType } from '@src/types';
 import { NoticeStyle } from '@src/assets/noticeStyle';
 import moment from 'moment';
 
-const NoticeItem = ({ notice }: { notice: NoticeType }) => {
+const BusinessItem = ({ notice }: { notice: NoticeType }) => {
   return (
     <div>
       <div className='flex flex-col items-center justify-center w-full mb-4'>
@@ -26,4 +26,4 @@ const NoticeItem = ({ notice }: { notice: NoticeType }) => {
   );
 };
 
-export default NoticeItem;
+export default BusinessItem;

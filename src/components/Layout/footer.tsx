@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='w-full mb-4 bg-gray-500 md:flex md:justify-between text-sm px-8'>
         <div>
           <StaticImage alt='logo' src='../../images/logo.png' width={50} />
-          <div className='text-md font-bold mt-4'>PennBIT (주) 펜빗 생물정보과학원</div>
+          <div className='text-md font-bold mt-4'>PennBIT (주) 펜빗 생물정보과학기술원</div>
         </div>
         <div>
           <div className='pt-8 md:pt-0 text-md font-bold mb-4'>CONTACT US</div>
@@ -19,12 +19,12 @@ const Footer = () => {
             <span className='font-bold'>Phone : </span> +82-10-3640-2689
           </div>
           <div>
-            <span className='font-bold'>E-mail : </span>hglee602@gmail.com
+            <span className='font-bold'>E-mail : </span>pennbit.korea@gmail.com
           </div>
         </div>
       </div>
-      <hr />
-      <div className='px-8 md:flex justify-end text-sm py-2'>ⓒ PennBIT, All rights reserved</div>
+      <hr className='my-0' />
+      <div className='px-8 md:flex justify-end text-sm py-2'>ⓒ 2022 PennBIT, All rights reserved</div>
     </div>
   );
 };

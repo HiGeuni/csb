@@ -1,8 +1,8 @@
-import React from 'react';
 import Layout from '@src/components/layout';
-import Card from '@src/components/introduction/Card';
 import Title from '@src/components/Common/Title';
 import DetailMenu from '@src/components/Common/DetailMenu';
+import Card from '@src/components/introduction/Card';
+import React from 'react';
 import { MenuType } from '@src/types';
 
 const menus: MenuType[] = [
@@ -20,15 +20,14 @@ const menus: MenuType[] = [
   },
 ];
 
-const IntroductionMain = () => {
-  console.log(location);
+const TempLayout = ({ children }: React.PropsWithChildren) => {
   return (
     <Layout>
       <Title title={'Introduction'} isSplit={true} />
       <DetailMenu menus={menus} />
-      <Card />
+      {children}
     </Layout>
   );
 };
 
-export default IntroductionMain;
+export default TempLayout;

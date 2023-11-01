@@ -6,10 +6,9 @@ import { Link } from 'gatsby';
 interface IProps {
   data: PaperType[];
 }
-const PaperContainer = ({ data }: IProps) => {
+const ProductContainer = ({ data }: IProps) => {
   return (
-    <div className='px-8 py-4'>
-      <div className='p-2 text-2xl font-bold'>논문</div>
+    <div className='container mx-auto'>
       {data.map((paper) => (
         <div className='p-2' key={paper.slug}>
           <Link className='text-lg font-bold cursor-pointer' to={`/paper/${paper.slug}`}>
@@ -22,4 +21,4 @@ const PaperContainer = ({ data }: IProps) => {
   );
 };
 
-export default PaperContainer;
+export default ProductContainer;

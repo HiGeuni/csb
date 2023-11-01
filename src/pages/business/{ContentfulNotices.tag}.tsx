@@ -1,8 +1,8 @@
 import React from 'react';
-import NoticeList from '@src/components/Notice/NoticeList';
+import BusinessList from '@src/components/Business/BusinessList';
 import { NoticeType } from '@src/types';
 import { graphql } from 'gatsby';
-import NoticeWrapper from '@src/components/Notice/NoticeWrapper';
+import BusinessWrapper from '@src/components/Business/BusinessWrapper';
 
 interface IProps {
   data: {
@@ -14,9 +14,9 @@ interface IProps {
 
 const NoticeTag = ({ data }: IProps) => {
   return (
-    <NoticeWrapper>
-      <NoticeList data={data.allContentfulNotices.nodes} />
-    </NoticeWrapper>
+    <BusinessWrapper>
+      <BusinessList data={data.allContentfulNotices.nodes} />
+    </BusinessWrapper>
   );
 };
 

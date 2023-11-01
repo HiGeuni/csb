@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-// interface SiteMetadataQueryData {
-//   site: {
-//     siteMetadata: {
-//       siteURL: string;
-//     };
-//   };
-// }
-
+interface navType {
+  title: string;
+  to: string;
+  active: boolean;
+}
 const Header = () => {
+  const [activePath, setActivePath] = useState<string>('');
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setActivePath(window.location.pathname.split('/')[1]);
+  }, [window.location]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -19,21 +21,7 @@ const Header = () => {
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  });
-
-  // const data: SiteMetadataQueryData = useStaticQuery(graphql`
-  //   query SiteMetadataQuery {
-  //     site {
-  //       siteMetadata {
-  //         siteURL
-  //       }
-  //     }
-  //   }
-  // `);
-  //
-  // const siteURL = data.site.siteMetadata.siteURL;
-  //
-  // console.log(siteURL);
+  }, []);
 
   return (
     <header className='w-full flex items-center'>
@@ -43,7 +31,7 @@ const Header = () => {
             <div className='cursor-pointer font-extrabold text-xl hover:text-gray-700 black-to-gray'>
               <Link className='flex items-center gap-x-2' to='/'>
                 <StaticImage alt='logo' src='../../images/logo.png' width={80} />
-                <div className='block text-accent text-2xl'>PennBIT</div>
+                <div className='block text-accent text-2xl font-bold'>PennBIT</div>
               </Link>
             </div>
 
@@ -64,35 +52,14 @@ const Header = () => {
               <ul
                 id='ulMenu'
                 className={`${
-                  // mobile 조건 추가
                   !open && 'invisible'
-                } md:visible flex flex-col items-center duration-300 ease-out sm:transition-none mt-5 mx-4 md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0`}
+                } md:visible flex flex-col items-center duration-300 ease-out sm:transition-none mt-5 mx-4 md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0 md:gap-x-6`}
               >
-                <li className='text-lg p-2 font-bold hover:text-[#041444] cursor-pointer '>
-                  <Link activeStyle={{ color: '#041444' }} to='/introduction'>
-                    introduction
-                  </Link>
-                </li>
-                <li className='text-lg p-2 font-bold hover:text-[#041444] cursor-pointer  '>
-                  <Link activeStyle={{ color: '#041444' }} to='/notice'>
-                    notice
-                  </Link>
-                </li>
-                <li className='text-lg p-2 font-bold hover:text-[#041444] cursor-pointer '>
-                  <Link activeStyle={{ color: '#041444' }} to='/paper'>
-                    paper
-                  </Link>
-                </li>
-                <li className='text-lg p-2 font-bold hover:text-[#041444] cursor-pointer '>
-                  <Link activeStyle={{ color: '#041444' }} to='/person'>
-                    person
-                  </Link>
-                </li>
-                <li className='text-lg p-2 font-bold hover:text-[#041444]cursor-pointer'>
-                  <Link activeStyle={{ color: '#041444' }} to='/activity'>
-                    activity
-                  </Link>
-                </li>
+                <NavItem title='PennBIT 소개' to='/introduction/rep' active={activePath === 'introduction'} />
+                <NavItem title='사업소개' to='/business' active={activePath === 'business'} />
+                <NavItem title='제품소개' to='/product' active={activePath === 'product'} />
+                <NavItem title='홍보센터' to='/news' active={activePath === 'news'} />
+                <NavItem title='고객지원' to='/help' active={activePath === 'help'} />
               </ul>
             </div>
           </div>
@@ -103,3 +70,17 @@ const Header = () => {
 };
 
 export default Header;
+
+const NavItem = ({ title, to, active }: navType) => {
+  return (
+    <li className='text-lg p-2 font-bold text-primary hover:text-black cursor-pointer transition-colors md:duration-500'>
+      <div
+        className={`
+        ${active ? 'text-black' : 'text-primary'}
+      `}
+      >
+        <Link to={to}>{title}</Link>
+      </div>
+    </li>
+  );
+};

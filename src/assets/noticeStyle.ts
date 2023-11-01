@@ -2,12 +2,12 @@ type StyleType = Record<string, { color: string }>;
 
 export const NoticeStyle: StyleType = {
   notice: {
-    color: '#ff0000',
+    color: '#ffb8b1',
   },
   academy: {
-    color: '#00ff00',
+    color: '#a3e1dc',
   },
   recruit: {
-    color: '#0000ff',
+    color: '#dfccf1',
   },
 };

@@ -14,7 +14,7 @@ module.exports = {
       secondary: '#A9AABC',
       brown1: '#3B2C00',
       brown2: '#6C5A2A',
-      gray: '#dee2e6'
+      gray: '#dee2e6',
     },
     extend: {
       transitionProperty: {
@@ -62,6 +62,16 @@ module.exports = {
             height: '0px',
           },
         },
+        moveUp : {
+          '0%': {
+            transform: 'translateY(50px)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateY(0px)',
+            opacity: '1',
+          }
+        }
       },
       animation: {
         'service-animation': 'serviceAnimation 1s ease-in-out',
@@ -70,6 +80,7 @@ module.exports = {
         'header-animation': 'headerColorChange 0.3s ease-in-out forwards',
         'header-height': 'headerHeightChange 0.15s ease-in-out forwards',
         'reverse-header-height': 'reverseHeaderHeightChange 0.15s ease-in-out forwards',
+        'move-up': 'moveUp 0.7s ease-in-out forwards',
       },
     },
   },

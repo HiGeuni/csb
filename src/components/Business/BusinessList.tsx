@@ -1,19 +1,19 @@
 import React from 'react';
 import { NoticeType } from '@src/types';
-import NoticeItem from '@src/components/Notice/NoticeItem';
+import BusinessItem from '@src/components/Business/BusinessItem';
 
 interface IProps {
   data: NoticeType[];
 }
 
-const NoticeList = ({ data }: IProps) => {
+const BusinessList = ({ data }: IProps) => {
   return (
     <div className='flex-col items-center px-8 py-4 justify-center'>
       {data.map((notice) => (
-        <NoticeItem notice={notice} />
+        <BusinessItem notice={notice} />
       ))}
     </div>
   );
 };
 
-export default NoticeList;
+export default BusinessList;

@@ -22,3 +22,8 @@ export interface cardType {
   content: string;
   url: string;
 }
+
+export interface MenuType {
+  title: string;
+  to: string;
+}

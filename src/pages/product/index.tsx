@@ -1,7 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { PaperType } from '@src/types';
-import PaperContainer from '@src/components/Paper/PaperContainer';
+import ProductContainer from '@src/components/Product/ProductContainer';
+import Title from '@src/components/Common/Title';
 
 import Layout from '../../components/layout';
 
@@ -12,15 +13,16 @@ interface DataProps {
     };
   };
 }
-const PaperMain = ({ data }: DataProps) => {
+const ProductMain = ({ data }: DataProps) => {
   return (
     <Layout>
-      <PaperContainer data={data.allContentfulPapers.nodes} />
+      <Title title={'Product'} isSplit={true} />
+      <ProductContainer data={data.allContentfulPapers.nodes} />
     </Layout>
   );
 };
 
-export default PaperMain;
+export default ProductMain;
 
 export const data = graphql`
   query {
