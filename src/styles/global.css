@@ -9,6 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Noto Sans KR';
+    box-sizing: content-box;
 }
 
 @layer base {

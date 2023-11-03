@@ -1,13 +1,12 @@
 import React from 'react';
-import { HelpMenus } from '@src/assets/menus';
 import TempLayout from '@src/components/Layout/TabLayout/TempLayout';
-
-const HelpMain = () => {
+import { HelpMenus } from '@src/assets/menus';
+const Notice = () => {
   return (
     <TempLayout title='Help' menus={HelpMenus}>
-      <div className='text-2xl p-2 text-primary font-extrabold'>문의 사항</div>
+      <div className='text-2xl p-2 text-primary font-extrabold'>Notice</div>
     </TempLayout>
   );
 };
 
-export default HelpMain;
+export default Notice;

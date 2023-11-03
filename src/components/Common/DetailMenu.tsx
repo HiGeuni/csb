@@ -14,6 +14,7 @@ const DetailMenu = ({ menus }: IProps) => {
       {menus.map((menu) => {
         return (
           <Link
+            key={menu.title}
             to={menu.to}
             className={`
               ${

@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <header className='w-full flex items-center'>
-      <div className='container mx-auto flex flex-wrap justify-between items-center p-1 '>
+      <div className='container mx-auto flex flex-wrap justify-between items-center p-1'>
         <nav id='nav' className='w-full bg-blue-700 ' role='navigation'>
           <div className='container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap '>
             <div className='cursor-pointer font-extrabold text-xl hover:text-gray-700 black-to-gray'>
@@ -55,7 +55,7 @@ const Header = () => {
                   !open && 'invisible'
                 } md:visible flex flex-col items-center duration-300 ease-out sm:transition-none mt-5 mx-4 md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0 md:gap-x-6`}
               >
-                <NavItem title='PennBIT 소개' to='/introduction/rep' active={activePath === 'introduction'} />
+                <NavItem title='회사소개' to='/introduction' active={activePath === 'introduction'} />
                 <NavItem title='사업소개' to='/business' active={activePath === 'business'} />
                 <NavItem title='제품소개' to='/product' active={activePath === 'product'} />
                 <NavItem title='홍보센터' to='/news' active={activePath === 'news'} />

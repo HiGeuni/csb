@@ -1,34 +1,14 @@
 import React from 'react';
-import Layout from '@src/components/layout';
 import Card from '@src/components/introduction/Card';
-import Title from '@src/components/Common/Title';
-import DetailMenu from '@src/components/Common/DetailMenu';
-import { MenuType } from '@src/types';
+import { IntroMenus } from '@src/assets/menus';
+import TempLayout from '@src/components/Layout/TabLayout/TempLayout';
 
-const menus: MenuType[] = [
-  {
-    title: '대표소개',
-    to: '/introduction/rep',
-  },
-  {
-    title: '조직도',
-    to: '/introduction/organization',
-  },
-  {
-    title: '회사 비전',
-    to: '/introduction/vision',
-  },
-];
-
-const IntroductionMain = () => {
-  console.log(location);
+const Rep = () => {
   return (
-    <Layout>
-      <Title title={'Introduction'} isSplit={true} />
-      <DetailMenu menus={menus} />
+    <TempLayout title='Introduction' menus={IntroMenus}>
       <Card />
-    </Layout>
+    </TempLayout>
   );
 };
 
-export default IntroductionMain;
+export default Rep;
