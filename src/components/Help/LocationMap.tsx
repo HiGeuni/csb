@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 
 const center = {
   lat: 35.1877147,
@@ -12,16 +12,16 @@ const LocationMap = () => {
     googleMapsApiKey: process.env.GATSBY_GOOGLE_API_KEY || '',
   });
 
-  const [map, setMap] = useState(null);
+  const [map, setMap] = useState<google.maps.Map | null>(null);
 
-  const onLoad = useCallback((map) => {
+  const onLoad = useCallback((map: google.maps.Map) => {
     const bounds = new window.google.maps.LatLngBounds(center);
     map.fitBounds(bounds);
 
     setMap(map);
   }, []);
 
-  const onUnmount = useCallback((map) => {
+  const onUnmount = useCallback(function callback(map: google.maps.Map | null) {
     setMap(null);
   }, []);
 
@@ -33,7 +33,7 @@ const LocationMap = () => {
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
-      <></>
+      <Marker position={center} />
     </GoogleMap>
   ) : (
     <div>Loading</div>
