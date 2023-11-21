@@ -9,12 +9,25 @@ module.exports = {
       black: '#000000',
       white: '#ffffff',
       transparent: 'transparent',
-      accent: '#05174E',
-      primary: '#444c74',
-      secondary: '#A9AABC',
       brown1: '#3B2C00',
       brown2: '#6C5A2A',
       gray: '#dee2e6',
+      primary: '#c6b9bc',
+      secondary: '#dddfe3',
+      accent: '#05174E',
+      text: '#101114',
+      background: '#f7f7f8',
+      static: 'rgba(225, 225, 225, 0.5)',
+      static1 : 'rgba(225,225,225,0.2)',
+      static2: '#0f0f0f',
+      static4: 'rgba(255,255,255,0.2)',
+      static3: 'rgb(255, 255, 255)',
+      static5: 'rgb(24, 172, 122)',
+      static6: 'rgba(0,0,0,0.05)',
+      static7: 'rgba(0,0,0,0.1)',
+      static8: 'rgba(0,0,00,0.05)',
+      static9: 'rgba(0,0,0,0.3)',
+      static10: 'rgba(255, 255, 255)',
     },
     extend: {
       transitionProperty: {
@@ -71,7 +84,7 @@ module.exports = {
             transform: 'translateY(0px)',
             opacity: '1',
           }
-        }
+        },
       },
       animation: {
         'service-animation': 'serviceAnimation 1s ease-in-out',

@@ -8,7 +8,7 @@ interface IProps {
 const Title = ({ title, isSplit }: IProps) => {
   return (
     <>
-      <div className='text-2xl font-bold flex justify-center'>{title}</div>
+      <div className='text-2xl text-text font-bold flex justify-center'>{title}</div>
       {/*{isSplit && <hr className='text-gray' />}*/}
     </>
   );

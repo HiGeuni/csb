@@ -25,19 +25,19 @@ const Header = () => {
 
   return (
     <header className='w-full flex items-center'>
-      <div className='container mx-auto flex flex-wrap justify-between items-center p-1'>
+      <div className='container mx-auto flex flex-wrap justify-between items-center p-2'>
         <nav id='nav' className='w-full bg-blue-700 ' role='navigation'>
           <div className='container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap '>
             <div className='cursor-pointer font-extrabold text-xl hover:text-gray-700 black-to-gray'>
               <Link className='flex items-center gap-x-2' to='/'>
                 <StaticImage alt='logo' src='../../images/logo.png' width={80} />
-                <div className='block text-accent text-2xl font-bold'>PennBIT</div>
+                <div className='block text-accent text-lg font-bold'>PennBIT</div>
               </Link>
             </div>
 
             <div className='ml-auto md:hidden'>
               <button onClick={() => setOpen(!open)} className='flex items-center px-3 py-2 rounded' type='button'>
-                <svg className='h-5 w-5 text-primary' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
+                <svg className='h-5 w-5 text-text' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
                   <title>Menu</title>
                   <path fill='currentColor' d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
                 </svg>
@@ -73,10 +73,10 @@ export default Header;
 
 const NavItem = ({ title, to, active }: navType) => {
   return (
-    <li className='text-lg p-2 font-bold text-primary hover:text-black cursor-pointer transition-colors md:duration-500'>
+    <li className='text-base p-2 font-bold hover:opacity-60 cursor-pointer transition-opacity md:duration-300'>
       <div
         className={`
-        ${active ? 'text-black' : 'text-primary'}
+        ${active ? 'text-black' : 'text-text'}
       `}
       >
         <Link to={to}>{title}</Link>

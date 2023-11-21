@@ -5,6 +5,7 @@ require('dotenv').config({
 });
 
 const config: GatsbyConfig = {
+  pathPrefix: '/csb',
   siteMetadata: {
     title: `csb_site`,
     siteUrl: `https://www.yourdomain.tld`
