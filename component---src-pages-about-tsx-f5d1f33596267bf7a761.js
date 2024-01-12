@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcsb_site=self.webpackChunkcsb_site||[]).push([[49],{2766:function(e,t,l){l.r(t);var s=l(7294);t.default=()=>s.createElement("main",null,s.createElement("h1",null,"About Me"),s.createElement("p",null,"Hi there! I'm the proud creator of this site, which I built with Gatsby."))}}]);
-//# sourceMappingURL=component---src-pages-about-tsx-f5d1f33596267bf7a761.js.map

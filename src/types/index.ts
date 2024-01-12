@@ -27,3 +27,10 @@ export interface MenuType {
   title: string;
   to: string;
 }
+
+export interface NewsType {
+  title: string;
+  content: string;
+  imgUrl: string;
+  slug: string;
+}

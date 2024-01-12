@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import Layout from '@src/components/layout';
 import Title from '@src/components/Common/Title';
 import BusinessTab from '@src/components/Business/BusinessTab';
+import { Divider } from '@mantine/core';
 
 interface IProps {
   data: {
@@ -17,7 +18,8 @@ interface IProps {
 const BusinessMain = ({ data }: IProps) => {
   return (
     <Layout>
-      <Title title={'Business'} isSplit={false} />
+      <Title title={'사업 소개'} isSplit={false} />
+      <Divider size='sm' />
       <BusinessTab />
       <BusinessList data={data.allContentfulNotices.nodes} />
     </Layout>
