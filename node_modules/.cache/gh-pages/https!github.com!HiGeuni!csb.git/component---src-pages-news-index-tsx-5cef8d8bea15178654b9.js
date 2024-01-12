@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcsb_site=self.webpackChunkcsb_site||[]).push([[756],{5736:function(e,t,l){l.r(t),l.d(t,{default:function(){return c}});var s=l(7294);var a=()=>s.createElement("div",{className:"flex flex-wrap justify-center"},"News Card"),n=l(7955),r=l(36);var c=()=>s.createElement(r.Z,null,s.createElement(n.Z,{title:"News",isSplit:!0}),s.createElement(a,null))}}]);
-//# sourceMappingURL=component---src-pages-news-index-tsx-5cef8d8bea15178654b9.js.map

@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcsb=self.webpackChunkcsb||[]).push([[934],{5384:function(u,l,s){s.r(l);var c=s(596),e=s(917);l.default=()=>(0,e.tZ)(c.Z,null,(0,e.tZ)("h1",null,"공지사항"))}}]);
-//# sourceMappingURL=component---src-pages-notice-tsx-14366012b04d6b9c280b.js.map

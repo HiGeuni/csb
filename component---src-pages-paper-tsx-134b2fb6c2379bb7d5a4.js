@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcsb=self.webpackChunkcsb||[]).push([[843],{5671:function(s,e,u){u.r(e);var l=u(1183),a=u(917);e.default=()=>(0,a.tZ)(l.Z,null,(0,a.tZ)("h1",null,"This is paper Page"))}}]);
-//# sourceMappingURL=component---src-pages-paper-tsx-134b2fb6c2379bb7d5a4.js.map

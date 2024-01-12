@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcsb=self.webpackChunkcsb||[]).push([[898],{2931:function(t,n,s){s.r(n),s.d(n,{default:function(){return i}});var u=s(7294),c=s(917);const l=()=>(0,c.tZ)(u.Fragment,null,"This is ActivityList");var e=s(7533);var i=()=>(0,c.tZ)(e.Z,null,(0,c.tZ)(l,null))}}]);
-//# sourceMappingURL=component---src-pages-activity-tsx-12822e2294106d98e183.js.map

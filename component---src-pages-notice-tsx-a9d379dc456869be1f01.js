@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcsb=self.webpackChunkcsb||[]).push([[934],{5384:function(s,e,u){u.r(e);var c=u(1183),l=u(917);e.default=()=>(0,l.tZ)(c.Z,null,(0,l.tZ)("h1",null,"This is notice Page"))}}]);
-//# sourceMappingURL=component---src-pages-notice-tsx-a9d379dc456869be1f01.js.map
