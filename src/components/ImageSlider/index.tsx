@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './styles.css';
 import { useKeenSlider } from 'keen-slider/react';
-import 'keen-slider/keen-slider.min.css';
+import './styles.css';
 import { StaticImage } from 'gatsby-plugin-image';
 
 export default function App() {
