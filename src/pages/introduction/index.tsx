@@ -5,7 +5,7 @@ import TempLayout from '@src/components/Layout/TabLayout/TempLayout';
 
 const Rep = () => {
   return (
-    <TempLayout title='Introduction' menus={IntroMenus}>
+    <TempLayout title='회사 소개' menus={IntroMenus}>
       <Card />
     </TempLayout>
   );

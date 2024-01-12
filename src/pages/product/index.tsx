@@ -16,7 +16,7 @@ interface DataProps {
 const ProductMain = ({ data }: DataProps) => {
   return (
     <Layout>
-      <Title title={'Product'} isSplit={true} />
+      <Title title={'제품 소개'} isSplit={true} />
       <ProductContainer data={data.allContentfulPapers.nodes} />
     </Layout>
   );

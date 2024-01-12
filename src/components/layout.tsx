@@ -8,7 +8,7 @@ const Layout = ({ children }: React.PropsWithChildren) => {
     <div className='w-full h-full relative'>
       <div className='h-auto min-h-full pb-[300px] md:pb-52'>
         <Header />
-        <div className='container mx-auto'>{children}</div>
+        <div className='container mx-auto p-6'>{children}</div>
       </div>
       <Footer />
     </div>

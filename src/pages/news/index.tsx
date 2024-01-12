@@ -7,7 +7,7 @@ import Layout from '../../components/layout';
 const NewsMain = () => {
   return (
     <Layout>
-      <Title title={'News'} isSplit={true} />
+      <Title title={'홍보 센터'} isSplit={true} />
       <NewsWrapper />
     </Layout>
   );

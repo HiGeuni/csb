@@ -5,15 +5,11 @@ import { StaticImage } from 'gatsby-plugin-image';
 interface navType {
   title: string;
   to: string;
-  active: boolean;
+  active?: boolean;
 }
-const Header = () => {
-  const [activePath, setActivePath] = useState<string>('');
-  const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    setActivePath(window.location.pathname.split('/')[1]);
-  }, [window.location]);
+const Header = () => {
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -55,11 +51,11 @@ const Header = () => {
                   !open && 'invisible'
                 } md:visible flex flex-col items-center duration-300 ease-out sm:transition-none mt-5 mx-4 md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0 md:gap-x-6`}
               >
-                <NavItem title='회사소개' to='/introduction' active={activePath === 'introduction'} />
-                <NavItem title='사업소개' to='/business' active={activePath === 'business'} />
-                <NavItem title='제품소개' to='/product' active={activePath === 'product'} />
-                <NavItem title='홍보센터' to='/news' active={activePath === 'news'} />
-                <NavItem title='고객지원' to='/help' active={activePath === 'help'} />
+                <NavItem title='회사소개' to='/introduction' />
+                <NavItem title='사업소개' to='/business' />
+                <NavItem title='제품소개' to='/product' />
+                <NavItem title='홍보센터' to='/news' />
+                <NavItem title='고객지원' to='/help' />
               </ul>
             </div>
           </div>
@@ -71,16 +67,17 @@ const Header = () => {
 
 export default Header;
 
-const NavItem = ({ title, to, active }: navType) => {
+const NavItem = ({ title, to }: navType) => {
   return (
-    <li className='text-base p-2 font-bold hover:opacity-60 cursor-pointer transition-opacity md:duration-300'>
-      <div
-        className={`
-        ${active ? 'text-black' : 'text-text'}
-      `}
+    <li className='text-base text-accent p-2 font-semibold hover:opacity-60 cursor-pointer transition-opacity md:duration-300'>
+      <Link
+        to={to}
+        activeStyle={{
+          fontWeight: 'bold',
+        }}
       >
-        <Link to={to}>{title}</Link>
-      </div>
+        {title}
+      </Link>
     </li>
   );
 };

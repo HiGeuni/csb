@@ -6,6 +6,10 @@ export const HelpMenus: MenuType[] = [
     to: '/help',
   },
   {
+    title: 'FAQ',
+    to: '/help/faq',
+  },
+  {
     title: '공지사항',
     to: '/help/notice',
   },
