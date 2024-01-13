@@ -8,9 +8,7 @@ const FAQPage = () => {
   return (
     <TempLayout title='고객 지원' menus={HelpMenus}>
       <Divider size='lg' />
-      {Array.from({ length: 10 }, (_, index) => (
-        <FAQ key={index} />
-      ))}
+      <FAQ />
     </TempLayout>
   );
 };
