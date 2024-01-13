@@ -6,7 +6,7 @@ import { Developing } from '@src/components/Common/Developing';
 const BusinessMain = () => {
   return (
     <Layout>
-      <Title title={'사업 소개'} isSplit={false} />
+      <Title title={'사업 소개'} detailTitle='Business Information' isSplit={false} />
       <Developing />
     </Layout>
   );

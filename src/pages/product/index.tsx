@@ -17,7 +17,7 @@ interface DataProps {
 const ProductMain = () => {
   return (
     <Layout>
-      <Title title={'제품 소개'} isSplit={true} />
+      <Title title={'제품 소개'} detailTitle='Product Information' isSplit={true} />
       <Developing />
     </Layout>
   );

@@ -6,13 +6,14 @@ import { MenuType } from '@src/types';
 
 interface IProps extends React.PropsWithChildren {
   title: string;
+  detailTitle: string;
   menus: MenuType[];
 }
 
-const TempLayout = ({ children, title, menus }: IProps) => {
+const TempLayout = ({ children, title, detailTitle, menus }: IProps) => {
   return (
     <Layout>
-      <Title title={title} isSplit={true} />
+      <Title title={title} detailTitle={detailTitle} isSplit={true} />
       <DetailMenu menus={menus} />
       {children}
     </Layout>

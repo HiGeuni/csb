@@ -5,7 +5,7 @@ import { IntroMenus } from '@src/assets/menus';
 
 const Vision = () => {
   return (
-    <TempLayout title='Introduction' menus={IntroMenus}>
+    <TempLayout title='회사 소개' detailTitle='Introduction' menus={IntroMenus}>
       {/*<div className='text-2xl p-2 text-primary font-extrabold'>Vision</div>*/}
       <Philosophys />
     </TempLayout>

@@ -2,15 +2,15 @@ import React from 'react';
 
 interface IProps {
   title: string;
-  isSplit?: boolean;
+  detailTitle: string;
 }
 
-const Title = ({ title, isSplit }: IProps) => {
+const Title = ({ title, detailTitle }: IProps) => {
   return (
-    <>
-      <div className='text-2xl text-text font-bold flex justify-center'>{title}</div>
-      {/*{isSplit && <hr className='text-gray' />}*/}
-    </>
+    <div className='flex flex-col items-center '>
+      <div className='text-2xl text-text font-bold mb-2'>{title}</div>
+      <div className='text-sm text-primary font-bold '>{detailTitle}</div>
+    </div>
   );
 };
 

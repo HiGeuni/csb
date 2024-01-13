@@ -6,7 +6,7 @@ import { FAQ } from '@src/components/Help/FAQ';
 
 const FAQPage = () => {
   return (
-    <TempLayout title='고객 지원' menus={HelpMenus}>
+    <TempLayout title='고객 지원' detailTitle='Help' menus={HelpMenus}>
       <Divider size='lg' />
       <FAQ />
     </TempLayout>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Organization = () => {
   return (
-    <TempLayout title='Introduction' menus={IntroMenus}>
+    <TempLayout title='회사 소개' detailTitle='Introduction' menus={IntroMenus}>
       <motion.div
         className='flex flex-col items-center justify-center mt-8'
         initial={{ opacity: 0 }}

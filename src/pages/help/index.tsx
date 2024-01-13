@@ -6,7 +6,7 @@ import { FaPaperPlane } from 'react-icons/fa';
 
 const HelpMain = () => {
   return (
-    <TempLayout title='고객 지원' menus={HelpMenus}>
+    <TempLayout title='고객 지원' detailTitle='Help' menus={HelpMenus}>
       <div className='text-3xl font-medium capitalize mb-8 text-center'>Contact Me</div>
       <div className='flex justify-center mt-8'>
         <motion.section

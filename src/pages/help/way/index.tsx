@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Notice = () => {
   return (
-    <TempLayout title='고객 지원' menus={HelpMenus}>
+    <TempLayout title='고객 지원' detailTitle='Help' menus={HelpMenus}>
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
