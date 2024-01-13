@@ -1,20 +1,23 @@
 import React from 'react';
-import { FaAngleDown } from 'react-icons/fa';
-import { Divider } from '@mantine/core';
+import { Accordion } from '@src/components/Help/Accordion';
+import { motion } from 'framer-motion';
 
 export const FAQ = () => {
+  const [isOpen, setIsOpen] = React.useState<string>('');
   return (
-    <>
-      <div className='w-full text-accent p-4 flex justify-between'>
-        <div className='flex '>
-          <div className='pl-2 pr-4 font-bold'>Q</div>
-          <div>Question</div>
-        </div>
-        <div>
-          <FaAngleDown />
-        </div>
-      </div>
-      <Divider size='sm' />
-    </>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
+    >
+      {Array.from({ length: 10 }, (_, index) => (
+        <Accordion id={index.toString()} expanded={isOpen} setExpanded={setIsOpen} />
+      ))}
+    </motion.section>
   );
 };
