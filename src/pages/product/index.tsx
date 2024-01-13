@@ -5,6 +5,7 @@ import ProductContainer from '@src/components/Product/ProductContainer';
 import Title from '@src/components/Common/Title';
 
 import Layout from '../../components/layout';
+import { Developing } from '@src/components/Common/Developing';
 
 interface DataProps {
   data: {
@@ -13,29 +14,13 @@ interface DataProps {
     };
   };
 }
-const ProductMain = ({ data }: DataProps) => {
+const ProductMain = () => {
   return (
     <Layout>
       <Title title={'제품 소개'} isSplit={true} />
-      <ProductContainer data={data.allContentfulPapers.nodes} />
+      <Developing />
     </Layout>
   );
 };
 
 export default ProductMain;
-
-export const data = graphql`
-  query {
-    allContentfulPapers {
-      nodes {
-        paperName
-        publish
-        author
-        slug
-        information {
-          information
-        }
-      }
-    }
-  }
-`;
