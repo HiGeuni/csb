@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 const IntroductionCard = () => {
   return (
-    <div className='block md:flex gap-x-4 gap-y-2 my-2'>
+    <div className='block md:flex gap-x-4 gap-y-4 my-2'>
       <StaticImage
         src='../../images/abc.jpg'
         className=' w-full md:w-1/2'

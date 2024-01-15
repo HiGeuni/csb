@@ -8,7 +8,7 @@ export const Search = () => {
       <MdSearch />
       <input type='text' className='bg-transparent border-none outline-none' />
       <Divider orientation='vertical' />
-      <button className='appearance-none'>검색</button>
+      <button className='text-sm sm:text-md appearance-none'>검색</button>
     </div>
   );
 };

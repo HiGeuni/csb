@@ -1,18 +1,18 @@
 import React from 'react';
-import BusinessTab from '@src/components/Business/BusinessTab';
-import Layout from '@src/components/layout';
-import Title from '@src/components/Common/Title';
+import { businessDummy } from '@src/assets/dummy/businessDummy';
+import { BusinessItem } from '@src/components/Business/BusinessItem';
+import { motion, useInView } from 'framer-motion';
+import { Divider } from '@mantine/core';
 
-interface IProps extends React.PropsWithChildren {}
-
-const BusinessWrapper = ({ children }: IProps) => {
+export const BusinessWrapper = () => {
   return (
-    <Layout>
-      <Title title={'Business'} />
-      <BusinessTab />
-      {children}
-    </Layout>
+    <div>
+      {businessDummy.map((item, index) => (
+        <React.Fragment key={index}>
+          <BusinessItem {...item} />
+          <Divider size='sm' />
+        </React.Fragment>
+      ))}
+    </div>
   );
 };
-
-export default BusinessWrapper;

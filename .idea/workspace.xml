@@ -6,18 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="ce992d40-a1e7-43fc-ad48-7cadaa39aac8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/Title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Business/BusinessItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Business/BusinessList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Business/BusinessTab.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Business/BusinessWrapper.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/DetailMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/DetailMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/Developing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/Developing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/Search.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/TabLayout/TempLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/TabLayout/TempLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Notice/Notice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Notice/Notice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/introduction/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/introduction/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/introduction/vision/philosophies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/introduction/vision/philosophies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/business/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/business/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/help/faq/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/help/faq/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/help/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/help/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/help/notice/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/help/notice/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/help/way/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/help/way/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/introduction/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/introduction/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/introduction/organization/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/introduction/organization/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/introduction/vision/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/introduction/vision/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/news/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/news/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +111,7 @@
       <workItem from="1702827052843" duration="14000" />
       <workItem from="1704973571712" duration="22477000" />
       <workItem from="1705093243667" duration="107000" />
-      <workItem from="1705179644728" duration="794000" />
+      <workItem from="1705179644728" duration="9068000" />
     </task>
     <servers />
   </component>

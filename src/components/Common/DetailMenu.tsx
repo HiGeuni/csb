@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MenuType } from '@src/types';
 import { Link } from 'gatsby';
 
@@ -21,7 +21,7 @@ const DetailMenu = ({ menus }: IProps) => {
   };
 
   return (
-    <div className='flex justify-center gap-x-20 mx-8 p-8 h-20 items-center text-accent text-lg font-bold'>
+    <div className='flex justify-center  gap-x-8 xs:gap-x-12 md:gap-x-20 md:mx-8 p-8 h-20 items-center text-accent text-md md:text-lg font-bold'>
       {menus.map((menu) => {
         return (
           <Link key={menu.title} to={menu.to} getProps={isActiveLink}>

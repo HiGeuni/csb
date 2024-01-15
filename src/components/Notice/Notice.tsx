@@ -20,8 +20,8 @@ export const NoticeTable = () => {
         </thead>
         <tbody>
           {noticeDummy.map((notice, index) => (
-            <tr key={index}>
-              <td className='p-4'>{notice.id}</td>
+            <tr key={index} className='border-b'>
+              <td className='p-4'>{notice.id} </td>
               <td className='p-4 cursor-pointer'>{notice.title}</td>
               <td className='p-4'>{notice.createdAt}</td>
             </tr>

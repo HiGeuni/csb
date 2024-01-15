@@ -29,7 +29,7 @@ const Notice = () => {
           </div>
         </div>
         <div className='flex justify-center items-center w-full h-[500px] mt-10'>
-          <div className='w-2/3 h-[500px]'>
+          <div className='w-4/5 h-[500px]'>
             <LocationMap />
           </div>
         </div>

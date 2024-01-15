@@ -13,7 +13,7 @@ interface IProps extends React.PropsWithChildren {
 const TempLayout = ({ children, title, detailTitle, menus }: IProps) => {
   return (
     <Layout>
-      <Title title={title} detailTitle={detailTitle} isSplit={true} />
+      <Title title={title} detailTitle={detailTitle} />
       <DetailMenu menus={menus} />
       {children}
     </Layout>

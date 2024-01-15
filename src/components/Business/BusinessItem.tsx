@@ -1,29 +1,35 @@
-import React from 'react';
-import { NoticeType } from '@src/types';
-import { NoticeStyle } from '@src/assets/noticeStyle';
-import moment from 'moment';
+import React, { useRef } from 'react';
+import { BusinessType } from '@src/types';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
-const BusinessItem = ({ notice }: { notice: NoticeType }) => {
+// TODO: Framer motion 공부 후 구현
+
+export const BusinessItem = (data: BusinessType) => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: [0, 1],
+  });
+
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [1, 1]);
+
   return (
-    <div>
-      <div className='flex flex-col items-center justify-center w-full mb-4'>
-        <div className='flex flex-row items-center justify-between w-full'>
-          <div className='text-xl font-bold flex gap-x-2 items-center'>
-            {notice.title}
-            <div
-              className={`p-2 rounded-2xl text-xs text-white`}
-              style={{
-                backgroundColor: NoticeStyle[notice.tag].color,
-              }}
-            >
-              {notice.tag}
-            </div>
-          </div>
-          <div className='text-sm'>{moment(notice.createdAt).format('YYYY-MM-DD')}</div>
-        </div>
+    <motion.div
+      ref={ref}
+      style={{
+        opacity: opacityProgress,
+      }}
+      viewport={{
+        once: true,
+      }}
+      className='w-full h-[28rem] flex px-4 flex-col justify-center md:justify-start items-center md:flex-row gap-4'
+    >
+      <div className='w-40 h-40 bg-black'>Image</div>
+      <div>
+        <div className='text-2xl font-bold text-accent mb-4'>{data.name}</div>
+        <div>{data.description}</div>
       </div>
-    </div>
+    </motion.div>
   );
 };
-
-export default BusinessItem;
