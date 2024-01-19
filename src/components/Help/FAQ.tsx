@@ -10,14 +10,14 @@ export const FAQ = ({ data }: { data: FAQType[] }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{
-        duration: 1,
+        duration: 0.5,
       }}
       viewport={{
         once: true,
       }}
     >
-      {data.map((item, index) => (
-        <Accordion id={index.toString()} expanded={isOpen} setExpanded={setIsOpen} data={item} />
+      {data.map((item) => (
+        <Accordion id={item.question} expanded={isOpen} setExpanded={setIsOpen} data={item} />
       ))}
     </motion.section>
   );

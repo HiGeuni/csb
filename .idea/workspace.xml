@@ -6,15 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ce992d40-a1e7-43fc-ad48-7cadaa39aac8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/Developing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/Notification.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Common/Title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/product/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Common/DetailMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Common/DetailMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Help/FAQ.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Help/FAQ.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Notice/Notice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Notice/Notice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/introduction/vision/philosophy.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/introduction/vision/philosophy.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/help/notice/index.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,26 +29,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/higeuni/project/csb_site",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/higeuni/project/csb_site/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/higeuni/project/csb_site/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/higeuni/project/csb_site&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/higeuni/project/csb_site/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/higeuni/project/csb_site/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactBuddySettings">
     <option name="extensionsIgnore" value="true" />
   </component>
@@ -103,7 +100,8 @@
       <workItem from="1702827052843" duration="14000" />
       <workItem from="1704973571712" duration="22477000" />
       <workItem from="1705093243667" duration="107000" />
-      <workItem from="1705179644728" duration="21596000" />
+      <workItem from="1705179644728" duration="24812000" />
+      <workItem from="1705650056448" duration="9448000" />
     </task>
     <servers />
   </component>

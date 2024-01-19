@@ -1,10 +1,20 @@
 import React from 'react';
-import { Divider, Pagination } from '@mantine/core';
+import { Divider } from '@mantine/core';
 import { NoticeType } from '@src/types';
 
-export const NoticeTable = ({ data }: { data: NoticeType[] }) => {
+export const NoticeTable = ({
+  data,
+  currentPage,
+  numNotices,
+}: {
+  data: NoticeType[];
+  currentPage: number;
+  numNotices: number;
+}) => {
+  const unit = currentPage * 10;
+  console.log(unit);
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center w-full'>
       <table className='w-full mb-4 rounded-full'>
         <thead>
           <tr>
@@ -22,15 +32,13 @@ export const NoticeTable = ({ data }: { data: NoticeType[] }) => {
         <tbody>
           {data.map((notice, index) => (
             <tr key={index} className='border-b'>
-              <td className='p-4'>{index + 1} </td>
+              <td className='p-4'>{numNotices - unit - index} </td>
               <td className='p-4 cursor-pointer'>{notice.title}</td>
               <td className='p-4'>{notice.createdAt}</td>
             </tr>
           ))}
         </tbody>
       </table>
-      {/* TODO : 연동하기*/}
-      <Pagination total={10} color='rgba(5, 23, 78, 1)' className='' />
     </div>
   );
 };

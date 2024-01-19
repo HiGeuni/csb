@@ -1,30 +1,23 @@
 import React from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 export const Philosophy = ({ content, imageUrl }: { content: string; imageUrl: string }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['0 1', '1.5 1'],
-  });
-
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [1.2, 1]);
-  const yProgress = useTransform(scrollYProgress, [0, 1], [100, 1]);
 
   return (
     <motion.div
       ref={ref}
-      style={{
-        opacity: opacityProgress,
-        y: yProgress,
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 100 },
       }}
-      transition={{ type: 'tween', duration: 0.2 }}
-      viewport={{
-        once: true,
-      }}
-      className='group mb-3 sm:mb-8 last:mb-0 flex h-1/2 '
+      className=''
     >
-      <section className='relative bg-gray-100 rounded-lg w-[800px] max-w-[42rem] overflow-y-hidden overflow-hidden sm:pr-8 sm:mb-8 last:mb-0 hover:bg-gray-200 transition group-even:pl-8 flex'>
+      <section className='relative bg-gray-100 rounded-lg w-full md:w-[800px] max-w-[42rem]overflow-y-hidden overflow-hidden sm:pr-8 sm:mb-8 last:mb-0 hover:bg-gray-200 transition group-even:pl-8 flex'>
         <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[70%] sm:h-[20rem] flex flex-col h-full md:group-even:ml-[18rem] text-accent text-xl font-bold justify-center'>
           {content}
         </div>

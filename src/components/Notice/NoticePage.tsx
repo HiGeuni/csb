@@ -1,13 +1,12 @@
 import React from 'react';
-
 import { motion } from 'framer-motion';
-
 import TempLayout from '@src/components/Layout/TabLayout/TempLayout';
 import { HelpMenus } from '@src/assets/menus';
 import { NoticeTable } from '@src/components/Notice/Notice';
 import { Search } from '@src/components/Common/Search';
 import { graphql } from 'gatsby';
 import { NoticeType } from '@src/types';
+import { Pagination } from '@src/components/Notice/Pagination';
 
 type DataType = {
   data: {
@@ -18,8 +17,8 @@ type DataType = {
 };
 
 export const query = graphql`
-  query {
-    notices: allContentfulNotices(sort: { fields: createdAt, order: DESC }) {
+  query noticeQuery($skip: Int!, $limit: Int!) {
+    notices: allContentfulNotices(sort: { createdAt: DESC }, limit: $limit, skip: $skip) {
       nodes {
         id
         title
@@ -35,26 +34,28 @@ export const query = graphql`
   }
 `;
 
-const Notice = ({ data }: DataType) => {
+interface iProps extends DataType {
+  pageContext: {
+    numPages: number;
+    currentPage: number;
+    numNotices: number;
+  };
+}
+
+const Notice = ({ data, pageContext }: iProps) => {
   const notices = data.notices.nodes;
 
   return (
     <TempLayout title='고객 지원' detailTitle='Help' menus={HelpMenus}>
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          duration: 1,
-        }}
-        viewport={{
-          once: true,
-        }}
-      >
+      <section>
         <div className='flex justify-end mb-2'>
           <Search />
         </div>
-        <NoticeTable data={notices} />
-      </motion.section>
+        <div className='flex flex-col items-center'>
+          <NoticeTable data={notices} numNotices={pageContext.numNotices} currentPage={pageContext.currentPage - 1} />
+          <Pagination currentPage={pageContext.currentPage} numPages={pageContext.numPages} />
+        </div>
+      </section>
     </TempLayout>
   );
 };
