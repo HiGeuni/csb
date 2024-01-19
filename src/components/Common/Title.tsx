@@ -2,7 +2,7 @@ import React from 'react';
 
 interface IProps {
   title: string;
-  detailTitle: string;
+  detailTitle?: string;
 }
 
 const Title = ({ title, detailTitle }: IProps) => {

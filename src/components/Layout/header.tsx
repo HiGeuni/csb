@@ -49,7 +49,7 @@ const Header = () => {
                 id='ulMenu'
                 className={`${
                   !open && 'invisible'
-                } md:visible flex flex-col items-center duration-300 ease-out sm:transition-none mt-5 mx-4 md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0 md:gap-x-6`}
+                } md:visible flex flex-col font-bold items-center duration-300 ease-out sm:transition-none mt-5 mx-4 md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0 md:gap-x-6`}
               >
                 <NavItem title='회사소개' to='/introduction' />
                 <NavItem title='사업소개' to='/business' />
