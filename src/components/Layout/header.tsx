@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className='w-full flex items-center'>
-      <div className='container mx-auto flex flex-wrap justify-between items-center p-2'>
+      <div className='container mx-auto flex flex-wrap justify-between items-center p-2 '>
         <nav id='nav' className='w-full bg-blue-700 ' role='navigation'>
           <div className='container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap '>
             <div className='cursor-pointer font-extrabold text-xl hover:text-gray-700 black-to-gray'>
@@ -42,8 +42,8 @@ const Header = () => {
             <div
               id='menu'
               className={`${
-                open ? 'h-56' : ''
-              } flex justify-center w-full h-0 transition-all ease-out duration-300 md:transition-none md:h-auto md:w-auto md:flex-grow md:flex md:items-center`}
+                open ? 'h-[280px]' : ''
+              } flex justify-center w-full h-0 transition-all ease-out duration-300 md:transition-none md:h-auto md:w-auto md:flex-grow md:flex md:items-center  overflow-hidden`}
             >
               <ul
                 id='ulMenu'

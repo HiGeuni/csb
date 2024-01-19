@@ -1,14 +1,44 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import NewsWrapper from '@src/components/News/NewsWrapper';
 import Title from '@src/components/Common/Title';
+import { NewsType } from '@src/types';
 
 import Layout from '../../components/layout';
+import DetailMenu from '@src/components/Common/DetailMenu';
+import { NewsMenus } from '@src/assets/menus';
 
-const NewsMain = () => {
+type DataType = {
+  data: {
+    news: {
+      nodes: NewsType[];
+    };
+  };
+};
+export const query = graphql`
+  query {
+    news: allContentfulNews {
+      nodes {
+        id
+        title
+        content {
+          id
+          content
+        }
+        imgUrl
+        newsUrl
+      }
+    }
+  }
+`;
+
+const NewsMain = ({ data }: DataType) => {
+  const newsData = data.news.nodes;
   return (
     <Layout>
       <Title title={'홍보 센터'} detailTitle='PR-Center' />
-      <NewsWrapper />
+      <DetailMenu menus={NewsMenus} />
+      <NewsWrapper data={newsData} />
     </Layout>
   );
 };

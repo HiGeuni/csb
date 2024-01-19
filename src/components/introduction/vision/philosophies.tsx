@@ -6,11 +6,10 @@ import { Divider } from '@mantine/core';
 
 const Philosophies = () => {
   return (
-    <motion.div className='scroll-mt-28 mb-28 flex flex-col justify-center'>
+    <motion.div className='scroll-mt-28 mb-28'>
       {philosophyData.map((item, index) => (
         <React.Fragment key={index}>
           <Philosophy content={item.content} imageUrl={item.image} />
-          <Divider size='xs' />
         </React.Fragment>
       ))}
     </motion.div>
@@ -18,11 +17,3 @@ const Philosophies = () => {
 };
 
 export default Philosophies;
-
-const ListComponent = ({ content, delay }: { content: string; delay: string }) => {
-  return (
-    <li className={`animate-move-up opacity-0 text-2xl p-2`} style={{ animationDelay: `${delay}ms` }}>
-      {content}
-    </li>
-  );
-};

@@ -11,11 +11,12 @@ export interface PaperType {
 export interface NoticeType {
   id: number;
   title: string;
-  createdAt: string;
   content: {
     content: string;
   };
-  tag: string;
+  createdAt: string;
+  updatedAt: string;
+  fixed: boolean;
 }
 export interface cardType {
   title: string;
@@ -30,8 +31,12 @@ export interface MenuType {
 
 export interface NewsType {
   title: string;
-  content: string;
+  content: {
+    id: string;
+    content: string;
+  };
   imgUrl: string;
+  newsUrl: string;
   slug: string;
 }
 
@@ -39,4 +44,12 @@ export type BusinessType = {
   name: string;
   description: string;
   imageUrl?: string;
+};
+
+export type FAQType = {
+  question: string;
+  answer: {
+    id: string;
+    answer: string;
+  };
 };

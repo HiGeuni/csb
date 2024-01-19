@@ -33,3 +33,10 @@ export const IntroMenus: MenuType[] = [
     to: '/introduction/vision',
   },
 ];
+
+export const NewsMenus: MenuType[] = [
+  {
+    title: '보도 자료',
+    to: '/news',
+  },
+];

@@ -1,7 +1,8 @@
 import React from 'react';
-import { noticeDummy } from '@src/assets/dummy/noticeDummy';
 import { Divider, Pagination } from '@mantine/core';
-export const NoticeTable = () => {
+import { NoticeType } from '@src/types';
+
+export const NoticeTable = ({ data }: { data: NoticeType[] }) => {
   return (
     <div className='flex flex-col items-center'>
       <table className='w-full mb-4 rounded-full'>
@@ -19,16 +20,17 @@ export const NoticeTable = () => {
           </tr>
         </thead>
         <tbody>
-          {noticeDummy.map((notice, index) => (
+          {data.map((notice, index) => (
             <tr key={index} className='border-b'>
-              <td className='p-4'>{notice.id} </td>
+              <td className='p-4'>{index + 1} </td>
               <td className='p-4 cursor-pointer'>{notice.title}</td>
               <td className='p-4'>{notice.createdAt}</td>
             </tr>
           ))}
         </tbody>
       </table>
-      <Pagination total={10} color='#05174E' />
+      {/* TODO : 연동하기*/}
+      <Pagination total={10} color='rgba(5, 23, 78, 1)' className='' />
     </div>
   );
 };

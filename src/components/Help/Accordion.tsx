@@ -2,14 +2,17 @@ import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FaAngleDown } from 'react-icons/fa';
 import { Divider } from '@mantine/core';
+import { FAQType } from '@src/types';
 
 type AccordionProps = {
   id: string;
   expanded: string;
   setExpanded: (id: string) => void;
+  data: FAQType;
 };
-export const Accordion = ({ id, expanded, setExpanded }: AccordionProps) => {
+export const Accordion = ({ id, expanded, setExpanded, data }: AccordionProps) => {
   const isOpen = id === expanded;
+
   return (
     <>
       <div
@@ -20,7 +23,7 @@ export const Accordion = ({ id, expanded, setExpanded }: AccordionProps) => {
       >
         <div className='flex'>
           <div className='pl-2 pr-4 font-bold'>Q</div>
-          <div className={isOpen ? 'underline underline-offset-4' : undefined}>Question</div>
+          <div className={isOpen ? 'underline underline-offset-4' : undefined}>{data.question}</div>
         </div>
         <div>
           <FaAngleDown />
@@ -34,7 +37,7 @@ export const Accordion = ({ id, expanded, setExpanded }: AccordionProps) => {
             exit='collapsed'
             variants={{
               collapsed: {
-                opacity: 1,
+                opacity: 0,
                 height: 0,
               },
               open: {
@@ -43,13 +46,10 @@ export const Accordion = ({ id, expanded, setExpanded }: AccordionProps) => {
               },
             }}
             transition={{ duration: 0.4 }}
-            className='w-full'
+            className='w-full overflow-hidden'
           >
-            <motion.div transition={{ duration: 0.4 }} className=' bg-secondary px-8 py-4 '>
-              Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer,
-              Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer,
-              Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer, Answer,
-              Answer,
+            <motion.div transition={{ duration: 0.4 }} className=' bg-secondary px-8 py-4  whitespace-pre'>
+              {data.answer.answer}
             </motion.div>
           </motion.div>
         )}

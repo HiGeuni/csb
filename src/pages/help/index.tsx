@@ -8,7 +8,7 @@ const HelpMain = () => {
   return (
     <TempLayout title='고객 지원' detailTitle='Help' menus={HelpMenus}>
       <div className='text-3xl font-medium capitalize mb-8 text-center'>Contact Me</div>
-      <div className='flex justify-center mt-8'>
+      <div className='flex justify-center mt-8 px-4'>
         <motion.section
           id='contact'
           className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
