@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import TempLayout from '@src/components/Layout/TabLayout/TempLayout';
 import { HelpMenus } from '@src/assets/menus';
 import { NoticeTable } from '@src/components/Notice/Notice';
@@ -48,9 +47,9 @@ const Notice = ({ data, pageContext }: iProps) => {
   return (
     <TempLayout title='고객 지원' detailTitle='Help' menus={HelpMenus}>
       <section>
-        <div className='flex justify-end mb-2'>
-          <Search />
-        </div>
+        {/*<div className='flex justify-end mb-2'>*/}
+        {/*  <Search />*/}
+        {/*</div>*/}
         <div className='flex flex-col items-center'>
           <NoticeTable data={notices} numNotices={pageContext.numNotices} currentPage={pageContext.currentPage - 1} />
           <Pagination currentPage={pageContext.currentPage} numPages={pageContext.numPages} />

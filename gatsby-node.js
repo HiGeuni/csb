@@ -35,8 +35,26 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   const notices = result.data.allContentfulNotices.nodes;
+
   const postsPerPage = 10;
+
   const numPages = Math.ceil(notices.length / postsPerPage);
+
+  Array.from(notices).forEach((notice, index) => {
+    createPage({
+      path: `/help/notice/detail/${notice.id}`,
+      component: path.resolve('' + './src/components/Notice/NoticeDetailPage.tsx'),
+      context: {
+        id: notice.id,
+        title: notice.title,
+        content: notice.content,
+        createdAt: notice.createdAt,
+        updatedAt: notice.updatedAt,
+        fixed: notice.fixed,
+      },
+    });
+  });
+
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/help/notice` : `/help/notice/${i + 1}`,

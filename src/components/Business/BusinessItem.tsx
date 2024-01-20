@@ -1,27 +1,20 @@
 import React, { useRef } from 'react';
 import { BusinessType } from '@src/types';
-import { motion, useScroll, useTransform } from 'framer-motion';
-
-// TODO: Framer motion 공부 후 구현
+import { motion } from 'framer-motion';
 
 export const BusinessItem = (data: BusinessType) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: [0, 1],
-  });
-
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [1, 1]);
-
   return (
     <motion.div
       ref={ref}
-      style={{
-        opacity: opacityProgress,
-      }}
-      viewport={{
-        once: true,
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 50 },
       }}
       className='w-full flex px-4 flex-col justify-center  items-center md:justify-between md:flex-row gap-4 p-8'
     >

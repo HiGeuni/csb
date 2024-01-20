@@ -2,14 +2,16 @@ import React from 'react';
 import { HelpMenus } from '@src/assets/menus';
 import TempLayout from '@src/components/Layout/TabLayout/TempLayout';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 import LocationMap from '@src/components/Help/LocationMap';
-import { FaLocationDot, FaMessage } from 'react-icons/fa6';
+import { FaLocationDot } from 'react-icons/fa6';
 
 const HelpMain = () => {
   return (
     <TempLayout title='고객 지원' detailTitle='Help' menus={HelpMenus}>
-      <div className='ml-4 text-3xl font-medium capitalize mb-2 text-center md:text-start'>Contact Me</div>
+      <div className='px-4 mt-4 text-2xl font-medium capitalize mb-2 text-center md:text-3xl md:text-start'>
+        Contact Me
+      </div>
       <p className='ml-4 text-primary text-center md:text-start'>문의 사항이 있다면 아래의 정보로 연락 주세요.</p>
       <motion.section
         id='contact'

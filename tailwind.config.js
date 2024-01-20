@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    `./src/pages/**/*.{js,jsx,ts,tsx}`,
-    `./src/components/**/*.{js,jsx,ts,tsx}`,
-  ],
+  content: [`./src/pages/**/*.{js,jsx,ts,tsx}`, `./src/components/**/*.{js,jsx,ts,tsx}`],
   theme: {
     colors: {
       black: '#000000',
@@ -18,7 +15,7 @@ module.exports = {
       text: '#101114',
       background: '#f7f7f8',
       static: 'rgba(225, 225, 225, 0.5)',
-      static1 : 'rgba(225,225,225,0.2)',
+      static1: 'rgba(225,225,225,0.2)',
       static2: '#0f0f0f',
       static4: 'rgba(255,255,255,0.2)',
       static3: 'rgb(255, 255, 255)',
@@ -31,8 +28,8 @@ module.exports = {
     },
     extend: {
       transitionProperty: {
-        'height': 'height',
-        'spacing': 'margin, padding',
+        height: 'height',
+        spacing: 'margin, padding',
       },
       keyframes: {
         serviceAnimation: {
@@ -51,7 +48,7 @@ module.exports = {
             bottom: '68px',
           },
         },
-        headerColorChange : {
+        headerColorChange: {
           '0%': {
             color: '#041444',
           },
@@ -75,7 +72,7 @@ module.exports = {
             height: '0px',
           },
         },
-        moveUp : {
+        moveUp: {
           '0%': {
             transform: 'translateY(50px)',
             opacity: '0',
@@ -83,7 +80,7 @@ module.exports = {
           '100%': {
             transform: 'translateY(0px)',
             opacity: '1',
-          }
+          },
         },
       },
       animation: {
@@ -98,4 +95,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
