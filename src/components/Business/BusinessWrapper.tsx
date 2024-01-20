@@ -7,11 +7,17 @@ import { Divider } from '@mantine/core';
 export const BusinessWrapper = () => {
   return (
     <div>
+      <Divider
+        size='sm'
+        style={{
+          marginTop: '2rem',
+        }}
+      />
       {businessDummy.map((item, index) => (
-        <React.Fragment key={index}>
+        <div key={index} className=''>
           <BusinessItem {...item} />
           <Divider size='sm' />
-        </React.Fragment>
+        </div>
       ))}
     </div>
   );

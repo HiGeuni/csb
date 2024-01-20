@@ -23,13 +23,14 @@ export const BusinessItem = (data: BusinessType) => {
       viewport={{
         once: true,
       }}
-      className='w-full h-[28rem] flex px-4 flex-col justify-center md:justify-start items-center md:flex-row gap-4'
+      className='w-full flex px-4 flex-col justify-center  items-center md:justify-between md:flex-row gap-4 p-8'
     >
-      <div className='w-40 h-40 bg-black'>Image</div>
-      <div>
+      <div className=' sm:hidden w-[200px] h-[200px]  bg-black'>Image</div>
+      <div className='w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[616px] lg:h-[600px] flex flex-col justify-center items-start'>
         <div className='text-2xl font-bold text-accent mb-4'>{data.name}</div>
         <div>{data.description}</div>
       </div>
+      <div className='hidden sm:block md:w-[300px] md:h-[300px] lg:w-[616px] lg:h-[600px] bg-black'>Image</div>
     </motion.div>
   );
 };
