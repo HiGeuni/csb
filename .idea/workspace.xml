@@ -5,13 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce992d40-a1e7-43fc-ad48-7cadaa39aac8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/business/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/business/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/business/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/business/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/business/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/vision/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/vision/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/vision/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/vision/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/business/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/business/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/business/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/business/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/business/5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/dummy/businessDummy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/dummy/businessDummy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/menus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/menus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/philosophy.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/philosophy.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Business/BusinessItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Business/BusinessItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Notice/Notice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Notice/Notice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Notice/NoticePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Notice/NoticePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/help/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/help/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageSlider/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Notice/NoticeDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Notice/NoticeDetailPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/introduction/vision/philosophies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/introduction/vision/philosophies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/introduction/vision/philosophy.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/introduction/vision/philosophy.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/main/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/main/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/main/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/main/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/business/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/business/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,26 +52,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/higeuni/project/csb_site&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/higeuni/project/csb_site/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/higeuni/project/csb_site/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/higeuni/project/csb_site/src/static",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/higeuni/project/csb_site/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/higeuni/project/csb_site/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactBuddySettings">
     <option name="extensionsIgnore" value="true" />
   </component>
@@ -63,14 +86,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/static" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images/main" />
+      <recent name="$PROJECT_DIR$/src/images/vision" />
+      <recent name="$PROJECT_DIR$/src/images/business" />
       <recent name="$PROJECT_DIR$/src/components/introduction/vision" />
       <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/public/static" />
-      <recent name="$PROJECT_DIR$/public/fonts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -101,7 +126,9 @@
       <workItem from="1704973571712" duration="22477000" />
       <workItem from="1705093243667" duration="107000" />
       <workItem from="1705179644728" duration="24812000" />
-      <workItem from="1705650056448" duration="17092000" />
+      <workItem from="1705650056448" duration="22687000" />
+      <workItem from="1705885258105" duration="8000" />
+      <workItem from="1705906214241" duration="9584000" />
     </task>
     <servers />
   </component>

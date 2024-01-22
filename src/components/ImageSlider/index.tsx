@@ -22,16 +22,13 @@ export default function App() {
       <div className='container mx-auto navigation-wrapper'>
         <div ref={sliderRef} className='keen-slider'>
           <div className='keen-slider__slide'>
-            <StaticImage src='../../images/1.png' alt='1' />
+            <StaticImage src='../../images/main/1.png' alt='1' />
           </div>
           <div className='keen-slider__slide'>
-            <StaticImage src='../../images/2.png' alt='1' />
+            <StaticImage src='../../images/main/2.png' alt='1' />
           </div>
           <div className='keen-slider__slide'>
-            <StaticImage src='../../images/3.png' alt='1' />
-          </div>
-          <div className='keen-slider__slide'>
-            <StaticImage src='../../images/4.png' alt='1' />
+            <StaticImage src='../../images/main/3.png' alt='1' />
           </div>
         </div>
         {loaded && instanceRef.current && (

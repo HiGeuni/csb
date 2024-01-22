@@ -13,10 +13,6 @@ export const HelpMenus: MenuType[] = [
     title: '공지사항',
     to: '/help/notice',
   },
-  {
-    title: '오시는길',
-    to: '/help/way',
-  },
 ];
 
 export const IntroMenus: MenuType[] = [

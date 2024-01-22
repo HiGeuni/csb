@@ -11,18 +11,18 @@ const NoticeDetailPage = ({ pageContext }: { pageContext: NoticeType }) => {
 
   return (
     <TempLayout title='고객 지원' detailTitle='Help' menus={HelpMenus}>
-      <section>
-        <div className='flex items-center cursor-pointer mb-2 text-[#595959] gap-2' onClick={onClickBack}>
+      <section className='px-4'>
+        <div className='flex items-center cursor-pointer mb-4 md:mb-2 text-[#595959] gap-2' onClick={onClickBack}>
           <FaArrowLeft />
           뒤로 가기
         </div>
-        <div className='text-accent text-4xl font-bold mb-6'>{pageContext.title}</div>
+        <div className='text-accent text-2xl md:text-3xl lg:text-4xl font-bold mb-6'>{pageContext.title}</div>
         <div className='flex gap-2 items-center text-text mb-6'>
           <div className='w-8 h-8 bg-primary rounded-full'></div>
           <div className='text-accent'>PennBIT</div>
           <div className='text-[#595959]'>/ {pageContext.createdAt}</div>
         </div>
-        <div className='leading-loose'>{pageContext.content.content}</div>
+        <div className='leading-loose whitespace-pre'>{pageContext.content.content}</div>
       </section>
     </TempLayout>
   );

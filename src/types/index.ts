@@ -43,7 +43,7 @@ export interface NewsType {
 export type BusinessType = {
   name: string;
   description: string;
-  imageUrl?: string;
+  imageUrl: string;
 };
 
 export type FAQType = {
