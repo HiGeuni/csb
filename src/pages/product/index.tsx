@@ -16,7 +16,7 @@ const ProductMain = () => {
   return (
     <Layout>
       <Title title={'제품 소개'} detailTitle='Product Information' />
-      <Notification content='Developing' />
+      <Notification content='추후 업데이트 예정입니다.' />
     </Layout>
   );
 };

@@ -8,7 +8,7 @@ require('dotenv').config({
 const config: GatsbyConfig = {
   pathPrefix: '/csb',
   siteMetadata: {
-    title: `csb_site`,
+    title: `PennBIT`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.

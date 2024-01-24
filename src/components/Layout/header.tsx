@@ -27,7 +27,6 @@ const Header = () => {
             <div className='cursor-pointer font-extrabold text-xl hover:text-gray-700 black-to-gray'>
               <Link className='flex items-center gap-x-2' to='/'>
                 <StaticImage alt='logo' src='../../images/logo.png' width={80} />
-                <div className='block text-accent text-lg font-bold'>PennBIT</div>
               </Link>
             </div>
 
@@ -42,7 +41,7 @@ const Header = () => {
             <div
               id='menu'
               className={`${
-                open ? 'h-[280px]' : ''
+                open ? 'h-[295px]' : ''
               } flex justify-center w-full h-0 transition-all ease-out duration-300 md:transition-none md:h-auto md:w-auto md:flex-grow md:flex md:items-center  overflow-hidden`}
             >
               <ul
@@ -69,7 +68,7 @@ export default Header;
 
 const NavItem = ({ title, to }: navType) => {
   return (
-    <li className='text-base text-accent p-2 font-semibold hover:opacity-60 cursor-pointer transition-opacity md:duration-300'>
+    <li className='text-lg text-accent p-2 font-semibold hover:opacity-60 cursor-pointer transition-opacity md:duration-300'>
       <Link
         to={to}
         activeStyle={{
