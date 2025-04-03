@@ -13,7 +13,7 @@ exports.createPages = async ({ graphql, actions }) => {
   //   pagination
   const result = await graphql(`
     query {
-      allContentfulNotices(sort: { createdAt: DESC }, limit: 1000) {
+      allContentfulNotice(sort: { createdAt: DESC }, limit: 1000) {
         nodes {
           id
           title
@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
           updatedAt(formatString: "YYYY-MM-DD")
           createdAt(formatString: "YYYY-MM-DD")
-          fixed
+          isFixed
         }
       }
     }
@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
     return;
   }
 
-  const notices = result.data.allContentfulNotices.nodes;
+  const notices = result.data.allContentfulNotice.nodes;
 
   const postsPerPage = 10;
 
@@ -69,3 +69,23 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 };
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type ContentfulNewsContent {
+      id: String
+      content: String
+    }
+    
+    type ContentfulNews implements Node {
+      id: ID!
+      title: String!
+      content: ContentfulNewsContent
+      imgUrl: String
+      slug: String
+      newsUrl: String
+    }
+  `
+  createTypes(typeDefs)
+}

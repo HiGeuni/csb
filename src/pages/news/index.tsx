@@ -3,10 +3,10 @@ import { graphql } from 'gatsby';
 import NewsWrapper from '@src/components/News/NewsWrapper';
 import Title from '@src/components/Common/Title';
 import { NewsType } from '@src/types';
-
-import Layout from '../../components/layout';
 import DetailMenu from '@src/components/Common/DetailMenu';
 import { NewsMenus } from '@src/assets/menus';
+
+import Layout from '../../components/layout';
 
 type DataType = {
   data: {

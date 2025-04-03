@@ -33,7 +33,7 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-source-contentful',
       options: {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        spaceId: 'hmrvha9w89nn',
+        spaceId: 'a4n2eo76deyj',
       },
     },
     'gatsby-plugin-image',

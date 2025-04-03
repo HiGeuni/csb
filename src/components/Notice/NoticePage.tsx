@@ -9,15 +9,15 @@ import { Pagination } from '@src/components/Notice/Pagination';
 
 type DataType = {
   data: {
-    notices: {
+    allContentfulNotice: {
       nodes: NoticeType[];
     };
   };
 };
 
 export const query = graphql`
-  query noticeQuery($skip: Int!, $limit: Int!) {
-    notices: allContentfulNotices(sort: { createdAt: DESC }, limit: $limit, skip: $skip) {
+  query {
+    allContentfulNotice(sort: { createdAt: DESC }, limit: 1000) {
       nodes {
         id
         title
@@ -27,7 +27,7 @@ export const query = graphql`
         }
         updatedAt(formatString: "YYYY-MM-DD")
         createdAt(formatString: "YYYY-MM-DD")
-        fixed
+        isFixed
       }
     }
   }
@@ -42,7 +42,7 @@ interface iProps extends DataType {
 }
 
 const Notice = ({ data, pageContext }: iProps) => {
-  const notices = data.notices.nodes;
+  const notices = data.allContentfulNotice.nodes;
 
   return (
     <TempLayout title='고객 지원' detailTitle='Help' menus={HelpMenus}>

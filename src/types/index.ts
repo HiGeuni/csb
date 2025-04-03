@@ -35,9 +35,9 @@ export interface NewsType {
     id: string;
     content: string;
   };
-  imgUrl: string;
-  newsUrl: string;
-  slug: string;
+  imgUrl?: string;
+  newsUrl?: string;
+  slug?: string;
 }
 
 export type BusinessType = {
